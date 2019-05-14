@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fontDefault</key>
+	<string>Roboto-Regular</string>
+	<key>fontRegular</key>
+	<string>Roboto-Regular</string>
+	<key>fontLight</key>
+	<string>Roboto-Light</string>
+	<key>fontMedium</key>
+	<string>Roboto-Medium</string>
+	<key>fontBold</key>
+	<string>Roboto-Bold</string>
+	<key>minimumFontSize</key>
+	<integer>9</integer>
+	<key>sizeXXSmall</key>
+	<integer>10</integer>
+	<key>sizexXSmall</key>
+	<integer>11</integer>
+	<key>sizeXSmall</key>
+	<integer>12</integer>
+	<key>sizexSmall</key>
+	<integer>13</integer>
+	<key>sizeSmall</key>
+	<integer>14</integer>
+	<key>sizeNormal</key>
+	<integer>15</integer>
+	<key>sizeMedium</key>
+	<integer>16</integer>
+	<key>sizeLarge</key>
+	<integer>18</integer>
+	<key>sizeXLarge</key>
+	<integer>22</integer>
+	<key>sizeXXLarge</key>
+	<integer>24</integer>
+</dict>
+</plist>

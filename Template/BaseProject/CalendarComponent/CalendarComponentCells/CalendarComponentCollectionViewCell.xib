@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CalendarComponentCollectionViewCell" customModule="SalonDesBeaute_Beautician" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="69" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="69" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mb_calender-active" translatesAutoresizingMaskIntoConstraints="NO" id="az8-Q4-egN">
+                        <rect key="frame" x="0.0" y="0.0" width="69" height="118"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Avp-05-Phf">
+                        <rect key="frame" x="15.5" y="32" width="38" height="54"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSG-AU-PHS" customClass="BaseUILabel" customModule="SalonDesBeaute_Beautician" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="38" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.48627450980392156" green="0.46666666666666667" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontNameTheme" value="fontBold"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontColorTheme" value="darkPurpleButton"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontSizeTheme" value="sizeLarge"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqJ-gR-Zdk" customClass="BaseUILabel" customModule="SalonDesBeaute_Beautician" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="33.5" width="38" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.48627450979999998" green="0.46666666670000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontNameTheme" value="fontRegular"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontColorTheme" value="darkPurpleButton"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontSizeTheme" value="sizeSmall"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="az8-Q4-egN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5D1-BU-PQw"/>
+                <constraint firstItem="az8-Q4-egN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5FJ-m3-78B"/>
+                <constraint firstAttribute="trailing" secondItem="az8-Q4-egN" secondAttribute="trailing" id="6k4-KK-d1a"/>
+                <constraint firstAttribute="bottom" secondItem="az8-Q4-egN" secondAttribute="bottom" id="7ac-c2-d9r"/>
+                <constraint firstItem="Avp-05-Phf" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="rcO-5l-Cic"/>
+                <constraint firstItem="Avp-05-Phf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yIg-6x-PC9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="69" height="118"/>
+            <connections>
+                <outlet property="imgBgSelected" destination="az8-Q4-egN" id="dNH-G9-MUk"/>
+                <outlet property="lblDate" destination="WSG-AU-PHS" id="akZ-2i-2mG"/>
+                <outlet property="lblDay" destination="jqJ-gR-Zdk" id="Wiy-8a-pc2"/>
+            </connections>
+            <point key="canvasLocation" x="-138.40000000000001" y="80.959520239880064"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mb_calender-active" width="52" height="55"/>
+    </resources>
+</document>
